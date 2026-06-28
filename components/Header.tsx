@@ -34,7 +34,7 @@ export const Header: React.FC = () => {
     { name: 'Experience', href: '#experience' },
     { name: 'Skills', href: '#skills' },
     { name: 'Fitkode', href: '#fitkode' },
-    { name: 'Awards', href: '#awards' },
+    { name: 'Credentials', href: '#credentials' },
     { name: 'Contact', href: '#contact' },
   ];
 
