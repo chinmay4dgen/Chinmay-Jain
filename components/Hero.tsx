@@ -35,7 +35,7 @@ export const Hero: React.FC = () => {
                 Get in Touch <ArrowRight size={20} />
               </a>
               <a 
-                href="resume.pdf" 
+                href="/chinmayjain.pdf" 
                 download
                 className="px-8 py-4 bg-secondary hover:bg-slate-800 text-white font-semibold rounded-xl transition-all duration-200 flex items-center justify-center gap-2 border border-slate-700 hover:border-accent/50"
               >
@@ -64,7 +64,7 @@ export const Hero: React.FC = () => {
                 {/* Image Container */}
                 <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-slate-800 bg-slate-900 ring-2 ring-slate-700/50 shadow-2xl">
                   <img 
-                    src="chinmay.jpg" 
+                    src="/chinmay.jpg" 
                     alt="Chinmay Jain" 
                     className="w-full h-full object-cover transform transition duration-500 group-hover:scale-105"
                   />
