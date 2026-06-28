@@ -1,71 +1,61 @@
 import React from 'react';
-import { Activity, Heart, Zap } from 'lucide-react';
+import { Activity, Dumbbell, Award } from 'lucide-react';
 
 export const Fitkode: React.FC = () => {
   return (
-    <section id="fitkode" className="py-24 relative overflow-hidden">
-      {/* Dynamic background for distinction */}
-      <div className="absolute inset-0 bg-gradient-to-br from-secondary to-primary z-0"></div>
-      <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-emerald-900/20 via-primary to-primary z-0 pointer-events-none"></div>
+    <section id="fitkode" className="py-20 relative overflow-hidden bg-slate-950">
+      {/* Background patterns */}
+      <div className="absolute inset-0 bg-dot-pattern pointer-events-none opacity-40"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-emerald-500/5 rounded-full blur-[90px] pointer-events-none"></div>
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="flex flex-col lg:flex-row items-center gap-16">
-          
-          <div className="lg:w-1/2">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-900/30 text-emerald-400 border border-emerald-900/50 text-sm font-medium mb-6">
-              <Activity size={16} /> Entrepreneurial Venture
+        <div className="max-w-4xl mx-auto glass-card rounded-2xl p-8 md:p-10 backdrop-blur-md bg-white/[0.01] border border-white/[0.06] hover:border-emerald-500/20 transition-all duration-300">
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 mb-6">
+            <div className="flex items-center gap-3">
+              <div className="p-2 bg-emerald-500/10 text-emerald-400 rounded-xl border border-emerald-500/20">
+                <Activity size={20} />
+              </div>
+              <div>
+                <span className="text-[10px] font-mono text-emerald-400 font-bold uppercase tracking-wider bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-500/20">
+                  Strategic Initiative
+                </span>
+                <h3 className="text-2xl font-bold text-white font-display tracking-tight mt-1.5">
+                  Fitkode: Fitness & Nutrition Project
+                </h3>
+              </div>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Fitkode: Fitness Simplified
-            </h2>
-            <p className="text-xl text-slate-300 mb-8 leading-relaxed">
-              Founder of a fitness-tech consultancy aiming to revolutionize personal health through AI-driven coaching. Merging deep product expertise with passion for wellness.
-            </p>
-            
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="mt-1 p-2 bg-emerald-900/20 rounded-lg text-emerald-500">
-                  <Zap size={24} />
-                </div>
-                <div>
-                  <h4 className="text-lg font-bold text-white">AI-Driven Coaching</h4>
-                  <p className="text-slate-400">Leveraging Large Language Models to provide personalized, real-time health and nutrition guidance.</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start gap-4">
-                <div className="mt-1 p-2 bg-emerald-900/20 rounded-lg text-emerald-500">
-                  <Heart size={24} />
-                </div>
-                <div>
-                  <h4 className="text-lg font-bold text-white">Holistic Approach</h4>
-                  <p className="text-slate-400">Combining certifications in Nutrition and Fitness (INFS) with scalable tech solutions.</p>
-                </div>
-              </div>
+            <div className="flex items-center gap-1.5 text-xs text-slate-500 font-mono">
+              <span>Domain Discovery</span>
             </div>
           </div>
 
-          <div className="lg:w-1/2">
-            <div className="relative bg-slate-900 border border-slate-800 rounded-2xl p-8 shadow-2xl overflow-hidden group hover:border-emerald-500/30 transition-all duration-500">
-                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-500 to-teal-500"></div>
-                
-                <div className="flex justify-between items-center mb-8">
-                    <h3 className="text-2xl font-bold text-white tracking-tight">FITKODE<span className="text-emerald-500">.</span>AI</h3>
-                    <div className="px-3 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-bold rounded uppercase tracking-wider">Beta Phase</div>
-                </div>
+          <p className="text-slate-300 text-sm leading-relaxed mb-6">
+            In addition to leading enterprise product scales, Chinmay founded <strong>Fitkode</strong> as a personal research initiative in wellness technology. The project explores lightweight, user-centered product frameworks to simplify diet tracking and wellness methodologies, combining strategic product discovery with specialized health domain expertise.
+          </p>
 
-                <div className="space-y-4">
-                    <div className="h-24 bg-slate-800 rounded-lg animate-pulse w-full"></div>
-                    <div className="flex gap-4">
-                        <div className="h-24 bg-slate-800 rounded-lg animate-pulse w-2/3"></div>
-                        <div className="h-24 bg-slate-800 rounded-lg animate-pulse w-1/3"></div>
-                    </div>
-                    <div className="h-12 bg-slate-800 rounded-lg animate-pulse w-full mt-6"></div>
-                </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="p-4 rounded-xl bg-slate-950/60 border border-slate-900 flex items-start gap-3">
+              <div className="p-2 bg-emerald-500/10 text-emerald-400 rounded-lg border border-emerald-500/10 mt-0.5">
+                <Dumbbell size={16} />
+              </div>
+              <div>
+                <h4 className="text-xs font-bold text-white uppercase tracking-wider font-mono">Product Frameworks</h4>
+                <p className="text-xs text-slate-400 mt-1 leading-relaxed">
+                  Designed streamlined client experiences to study user engagement and behavioral persistence in high-fidelity diet plans.
+                </p>
+              </div>
+            </div>
 
-                <div className="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-slate-900 to-transparent flex justify-center pt-20">
-                    <p className="text-emerald-400 font-mono text-sm">System Status: Optimizing AI Models...</p>
-                </div>
+            <div className="p-4 rounded-xl bg-slate-950/60 border border-slate-900 flex items-start gap-3">
+              <div className="p-2 bg-emerald-500/10 text-emerald-400 rounded-lg border border-emerald-500/10 mt-0.5">
+                <Award size={16} />
+              </div>
+              <div>
+                <h4 className="text-xs font-bold text-white uppercase tracking-wider font-mono">Science-Backed Insights</h4>
+                <p className="text-xs text-slate-400 mt-1 leading-relaxed">
+                  Synthesized direct user behavior studies alongside formal credentialing from the Diploma in Nutrition and Fitness (INFS Pune, 2024).
+                </p>
+              </div>
             </div>
           </div>
         </div>
